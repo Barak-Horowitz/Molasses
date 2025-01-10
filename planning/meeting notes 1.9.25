@@ -1,0 +1,57 @@
+Minimum Viable Product:
+
+basic website (molasses.com) where someone goes and pastes in a checkout link into the website, which then searches an internal DB and returns coupon codes to try out - in beginning start out with just amazon, User should be able to provide feedback on whether or not coupon works user should also be able to input new coupons they have found into db. Also include a tutorial section + a home page that explains product/how site works and future plans 
+
+## MVP Requirements:
+
+- Basic website ([molasses.com](http://molasses.com))
+- Input field for pasting checkout links
+    - Internal database of coupon codes
+    - Search functionality to match links with relevant coupons
+    - Initial focus on Amazon platform only
+- User feedback system for coupon validity
+- User ability to submit new coupons to database
+- Tutorial section and Homepage featuring:
+    - Product explanation
+    - Usage instructions
+    - Future development plans
+
+Plan to get requirements:
+
+build basic backend on ruby to allow users to input coupon codes
+
+sqlite database to store coupons 
+
+JS/HTML/CSS frontend to make everything look nice
+
+SQL Table contains: coupon ID|  product ID | name of coupon | coupon type | website | amnt of successes | amnt of fails in row | date coupon entered | date of last successful use - duplicate coupons will exist with different product id’s | expiration date | description
+
+another SQI Table website | Product ID’s 
+
+Basic Relationships:
+
+Website: has many coupons, has many product ID’s 
+
+Coupon: Has an ID, has many Products, has a website, has an expiration date, has a name
+
+Product: Has an ID
+
+basic user features:
+
+User should be able to enter a coupon code and associated fields 
+
+User should be able to enter a checkout URL - we need to be able to parse info from urls 
+
+Alpha Schedule: 
+
+By Tuesday: Read Document: https://guides.rubyonrails.org/getting_started.html#creating-a-database-model 
+
+add everyone to github + discord 
+
+Meet up Tuesday 1/14: make SQL Table and general CRUD model for how to input coupons and past in URLS 
+
+Meet up Thursday 1/23: clean up site/do frontend for entering a coupon code, frontend for displaying coupon codes
+
+Meet up Monday 1/27: Have ability to parse URL and perform query on database for valid coupons 
+
+Meet up 2/3: tutorial and homepage of site are fully operational, all bugs/issues are finished, alpha is deployed live.

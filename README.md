@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -8,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+* System dependenciesS
 
 * Configuration
 
@@ -23,6 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-=======
-# Molasses
->>>>>>> 888d262d590188c9fb142afb0989750ee931671c
+* Meeting notes located in Planning folder
